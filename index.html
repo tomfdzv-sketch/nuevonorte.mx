@@ -3,125 +3,93 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Nuevo Norte — casa productora de cine de autor, Ciudad de México. Ficción y documental; services, line production y coproducción.">
-<meta name="theme-color" content="#141210">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Nuevo Norte — Casa productora de cine</title>
+<meta name="description" content="Casa productora de cine de autor, Ciudad de México. Ficción y documental; services, line production y coproducción.">
 <link rel="canonical" href="https://nuevonorte.mx/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Nuevo Norte">
 <meta property="og:title" content="Nuevo Norte — Casa productora de cine">
 <meta property="og:description" content="Casa productora de cine de autor, Ciudad de México. Ficción y documental; services, line production y coproducción.">
 <meta property="og:url" content="https://nuevonorte.mx/">
-<title>Nuevo Norte</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Archivo:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<style>
-:root{--cream:#e8ddc8;--ink:#141210;--muted:#8f8672;--line:#2c2822;--linec:#d5c9b0}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;display:flex;flex-direction:column;min-height:100vh;
-  background:var(--cream);color:var(--ink);
-  font:16px/1.55 "Archivo",-apple-system,Helvetica,Arial,sans-serif}
-a{color:inherit;text-decoration:none}
-.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
-
-header{display:flex;justify-content:space-between;align-items:flex-start;
-  padding:22px 26px 0}
-header nav{display:flex;gap:22px;font-size:13px;letter-spacing:.16em;
-  text-transform:uppercase;padding-top:10px;flex-wrap:wrap}
-header nav a{border-bottom:2px solid transparent;padding-bottom:3px}
-header nav a:hover{border-color:var(--ink)}
-.giant{font-family:"Oswald","Arial Narrow",sans-serif;font-weight:600;
-  text-transform:uppercase;line-height:.9;letter-spacing:-.005em;margin:0;
-  font-size:clamp(56px,11vw,150px)}
-.giant span{display:block}
-.sub{margin:18px 0 0 4px;font-size:12px;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--muted)}
-.gatespace{height:26vh}
-
-.seclabel{padding:20px 26px 12px;font-size:12px;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--linec)}
-.band{background:#141210;color:#e8ddc8}
-.band .seclabel{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-
-.prose{padding:30px 26px 54px;max-width:70ch}
-.prose p{font-size:17px;line-height:1.7;margin:0 0 20px}
-.prose p:last-child{margin-bottom:0}
-.prose .lead{font-family:"Oswald","Arial Narrow",sans-serif;font-weight:500;
-  text-transform:uppercase;font-size:clamp(22px,3.4vw,34px);line-height:1.15;
-  letter-spacing:.02em;max-width:24ch;text-wrap:balance}
-.prose .mono{color:var(--muted);font-size:13px}
-
-.proj{display:block;padding:34px 26px 30px;border-bottom:1px solid var(--line)}
-.proj:last-child{border-bottom:none}
-.proj .t{font-family:"Oswald","Arial Narrow",sans-serif;font-weight:600;
-  font-size:clamp(30px,5vw,64px);text-transform:uppercase;letter-spacing:.03em;
-  line-height:1;margin:0 0 12px}
-.proj .m{display:flex;gap:26px;flex-wrap:wrap;font-size:11px;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--muted);margin-bottom:14px}
-.proj .n{max-width:62ch;font-size:15px;line-height:1.65;margin:0;color:#cfc4ac}
-a.proj:hover .t{letter-spacing:.05em}
-a.proj:hover .m{color:#e8ddc8}
-
-.contact{padding:30px 26px 60px;max-width:70ch}
-.contact p{font-size:17px;line-height:1.7;margin:0 0 14px}
-.contact .mono{color:var(--muted);font-size:13px}
-.contact a{border-bottom:1px solid var(--linec)}
-.contact a:hover{border-color:var(--ink)}
-
-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
-  margin-top:auto;padding:34px 26px;font-size:12px;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--muted)}
-footer a:hover{color:var(--ink)}
-
-@media(max-width:639px){
-  header{padding:16px 16px 0}
-  header nav{font-size:10px;letter-spacing:.12em;gap:7px 12px;
-    padding-top:4px;justify-content:flex-end;text-align:right;flex:0 1 46%}
-  .gatespace{height:14vh}
-}
-@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
-</style>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#141210">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Archivo:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
   <div>
-    <h1 class="giant"><span>Nuevo</span><span>Norte</span></h1>
-    <p class="sub">Casa productora de cine · Ciudad de México</p>
+    <h1 class="giant"><a href="index.html"><span>Nuevo</span><span>Norte</span></a></h1>
+    <p class="sub">Casa productora de cine &middot; Ciudad de M&eacute;xico</p>
   </div>
   <nav>
-    <a href="#casa">La Casa</a>
-    <a href="#mision">Misión</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
+    <a href="index.html#casa">La Casa</a>
+    <a href="index.html#mision">Misi&oacute;n</a>
+    <a href="index.html#proyectos">Proyectos</a>
+    <a href="index.html#contacto">Contacto</a>
   </nav>
 </header>
+<div id="reel" aria-hidden="true"><video muted playsinline preload="auto" disablepictureinpicture></video><div class="veil"></div></div><div id="reelcap" class="mono"></div>
+<script>
+(function(){
+  var VC=[
+   {s:"assets/reel/reel1.mp4",c:"Bajo el Mismo Sol"},
+   {s:"assets/reel/reel2.mp4",c:"Bajo el Mismo Sol"},
+   {s:"assets/reel/reel3.mp4",c:"Bajo el Mismo Sol"},
+   {s:"assets/reel/reel4.mp4",c:"Bajo el Mismo Sol"},
+   {s:"assets/reel/reel5.mp4",c:"Bajo el Mismo Sol"},
+   {s:"assets/reel/reel6.mp4",c:"Bajo el Mismo Sol"},
+   {s:"assets/reel/reel7_sentir.mp4",c:"El Sentir de las Monta\u00f1as"},
+   {s:"assets/reel/reel8_sentir.mp4",c:"El Sentir de las Monta\u00f1as"},
+   {s:"assets/reel/reel9_sentir.mp4",c:"El Sentir de las Monta\u00f1as"},
+   {s:"assets/reel/reel_2y3a.mp4",c:"Dos Noches y Tres D\u00edas"},
+   {s:"assets/reel/reel_2y3b.mp4",c:"Dos Noches y Tres D\u00edas"}];
+  if(!matchMedia('(min-width:640px)').matches)return;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  for(var i=VC.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=VC[i];VC[i]=VC[j];VC[j]=t;}
+  var wrap=document.getElementById('reel'),cap=document.getElementById('reelcap'),
+      v=wrap.querySelector('video'),n=0,started=false;
+  function play(){
+    var it=VC[n%VC.length];n++;
+    v.src=it.s;v.load();cap.textContent='\u25b8 '+it.c;
+    var p=v.play();if(p&&p.catch)p.catch(function(){});
+  }
+  v.addEventListener('playing',function(){
+    wrap.classList.add('play');
+    if(!started){started=true;
+      document.documentElement.classList.add('reel-on');
+      document.body.classList.add('reel-on');}
+  });
+  v.addEventListener('ended',play);
+  v.addEventListener('error',function(){play();});
+  play();
+})();
+</script>
 
 <div class="gatespace"></div>
 
-<div class="seclabel" id="casa">Quiénes somos</div>
+<div class="seclabel" id="casa">Qui&eacute;nes somos</div>
 <div class="prose">
   <p class="lead">Nuevo Norte es una casa de cine.</p>
-  <p>Casa productora de cine de autor — ficción y documental — con sede en la
-  Ciudad de México, que también produce para otros: services y line production
-  de cine, coproducción ejecutiva y trabajo comercial selectivo.</p>
-  <p>Somos un núcleo de socios que cubre dirección, producción, encargos y
-  postproducción: la casa puede llevar una película completa del guion a la
+  <p>Casa productora de cine de autor &mdash; ficci&oacute;n y documental &mdash; con sede en la
+  Ciudad de M&eacute;xico, que tambi&eacute;n produce para otros: services y line production
+  de cine, coproducci&oacute;n ejecutiva y trabajo comercial selectivo.</p>
+  <p>Somos un n&uacute;cleo de socios que cubre direcci&oacute;n, producci&oacute;n, encargos y
+  postproducci&oacute;n: la casa puede llevar una pel&iacute;cula completa del guion a la
   copia final.</p>
 </div>
 
-<div class="seclabel" id="mision">Misión</div>
+<div class="seclabel" id="mision">Misi&oacute;n</div>
 <div class="prose">
-  <p>Creemos en el cine de autor como una forma de guía: una película
+  <p>Creemos en el cine de autor como una forma de gu&iacute;a: una pel&iacute;cula
   reestructura el mapa de quien la ve.</p>
-  <p>Hacemos ficción y documental con mirada personal: películas que nacen de
-  una obsesión verdadera de quien las dirige y que buscan una forma propia de
+  <p>Hacemos ficci&oacute;n y documental con mirada personal: pel&iacute;culas que nacen de
+  una obsesi&oacute;n verdadera de quien las dirige y que buscan una forma propia de
   contar. Y las producimos con una manera de trabajar seria y profesional.</p>
   <p>Nos interesan las historias que solo pueden contarse desde donde estamos:
-  México y sus fronteras — geográficas, familiares, de lengua y de clase. Las
+  M&eacute;xico y sus fronteras &mdash; geogr&aacute;ficas, familiares, de lengua y de clase. Las
   miramos de frente, sin exotismo ni condescendencia. Y creemos que el proceso
-  es parte de la obra: una película se parece siempre a la manera en que fue
+  es parte de la obra: una pel&iacute;cula se parece siempre a la manera en que fue
   hecha.</p>
   <p>Cada trabajo tiene su ritmo: el cine propio se trabaja con paciencia; los
   encargos, con oficio y puntualidad. Nada de eso lo confundimos con la obra:
@@ -133,48 +101,47 @@ footer a:hover{color:var(--ink)}
 <div class="band" id="proyectos">
   <div class="seclabel">Proyectos</div>
 
-  <div class="proj">
+  <a class="proj" href="proyecto/radio-betania.html">
     <h2 class="t">Radio Betania</h2>
-    <div class="m mono"><span>Largometraje · Documental</span><span>En desarrollo</span><span>México – España</span></div>
-    <p class="n">El primer largometraje de la casa, en coproducción
-    internacional México–España. Actualmente en desarrollo y ruta de
+    <div class="m mono"><span>Largometraje &middot; Documental</span><span>En desarrollo</span><span>M&eacute;xico &ndash; Espa&ntilde;a</span></div>
+    <p class="n">El primer largometraje de la casa, en coproducci&oacute;n
+    internacional M&eacute;xico&ndash;Espa&ntilde;a. Actualmente en desarrollo y ruta de
     financiamiento, con rodaje previsto para 2027.</p>
-  </div>
+  </a>
 
-  <a class="proj" href="https://tomfdzv.com/proyecto/bajo-el-mismo-sol.html" target="_blank" rel="noopener">
+  <a class="proj" href="proyecto/bajo-el-mismo-sol.html">
     <h2 class="t">Bajo el Mismo Sol</h2>
-    <div class="m mono"><span>Documental</span><span>En postproducción</span><span>Galicia, España</span></div>
+    <div class="m mono"><span>Documental</span><span>En postproducci&oacute;n</span><span>Galicia, Espa&ntilde;a</span></div>
     <p class="n">Documental observacional rodado en Galicia a lo largo de cinco
-    viajes. Un solo día imaginado — amanecer a noche — construido con las vidas
-    de personas que no se conocen entre sí: canteros, tamborileiros,
+    viajes. Un solo d&iacute;a imaginado &mdash; amanecer a noche &mdash; construido con las vidas
+    de personas que no se conocen entre s&iacute;: canteros, tamborileiros,
     apicultores, el entroido.</p>
   </a>
 
-  <a class="proj" href="https://tomfdzv.com/proyecto/dos-noches-y-tres-dias.html" target="_blank" rel="noopener">
-    <h2 class="t">Dos Noches y Tres Días</h2>
-    <div class="m mono"><span>2021 · 20 min</span><span>Documental de dos canales</span><span>Codirigida con Yago Ontañón de Prado</span></div>
-    <p class="n">Documental de dos canales codirigido con Yago Ontañón de
+  <a class="proj" href="proyecto/dos-noches-y-tres-dias.html">
+    <h2 class="t">Dos Noches y Tres D&iacute;as</h2>
+    <div class="m mono"><span>2021 &middot; 20 min</span><span>Documental de dos canales</span><span>Codirigida con Yago Onta&ntilde;&oacute;n de Prado</span></div>
+    <p class="n">Documental de dos canales codirigido con Yago Onta&ntilde;&oacute;n de
     Prado. Presentado en APT Gallery y Fitzrovia Gallery, Londres.</p>
   </a>
 
-  <a class="proj" href="https://tomfdzv.com/proyecto/el-sentir-de-las-montanas.html" target="_blank" rel="noopener">
-    <h2 class="t">El Sentir de las Montañas</h2>
-    <div class="m mono"><span>2022 · 53 min</span><span>Documental</span><span>Londres</span></div>
-    <p class="n">Documental en tres capítulos realizado con miembros de la
-    comunidad latinoamericana en Londres: una exploración de la llegada, la
-    comunidad y la sanación.</p>
+  <a class="proj" href="proyecto/el-sentir-de-las-montanas.html">
+    <h2 class="t">El Sentir de las Monta&ntilde;as</h2>
+    <div class="m mono"><span>2022 &middot; 53 min</span><span>Documental</span><span>Londres</span></div>
+    <p class="n">Documental en tres cap&iacute;tulos realizado con miembros de la
+    comunidad latinoamericana en Londres: una exploraci&oacute;n de la llegada, la
+    comunidad y la sanaci&oacute;n.</p>
   </a>
 </div>
 
 <div class="seclabel" id="contacto">Contacto</div>
 <div class="contact">
-  <p>Para coproducciones, services y line production en México, o proyectos
+  <p>Para coproducciones, services y line production en M&eacute;xico, o proyectos
   que necesiten casa productora:</p>
-  <p class="mono">Ciudad de México</p>
+  <p class="mono"><a href="mailto:hola@nuevonorte.mx">hola@nuevonorte.mx</a> &middot; Ciudad de M&eacute;xico</p>
 </div>
-
 <footer>
-  <span>© Nuevo Norte — Casa productora de cine</span>
+  <span>&copy; Nuevo Norte &mdash; Casa productora de cine</span>
   <span class="mono">CDMX</span>
 </footer>
 </body>
