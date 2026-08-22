@@ -276,3 +276,4 @@ body.reel-on .seclabel{border-color:var(--linec)}
 @media(max-width:560px){.band .feature .m{position:absolute;bottom:14px}}
 .feature.still img{opacity:.8;transform:none}
 .feature.still:hover img{opacity:1}
+.nflip{display:inline-block;transform:scaleX(-1)}
