@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Proyectos — Nuevo Norte</title>
+<meta name="description" content="Proyectos de Nuevo Norte, casa productora de cine, Ciudad de México.">
+<link rel="canonical" href="https://nuevonorte.mx/proyectos.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nuevo Norte">
+<meta property="og:title" content="Proyectos — Nuevo Norte">
+<meta property="og:url" content="https://nuevonorte.mx/proyectos.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#141210">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Archivo:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1 class="giant"><a href="index.html"><span>Nuevo</span><span>Norte</span></a></h1>
+    <p class="sub">Casa productora de cine &middot; Ciudad de M&eacute;xico</p>
+  </div>
+  <nav>
+    <a href="index.html#casa">La Casa</a>
+    <a href="index.html#mision">Misi&oacute;n</a>
+    <a href="proyectos.html" class="on">Proyectos</a>
+    <a href="index.html#contacto">Contacto</a>
+  </nav>
+</header>
+<div class="band">
+  <div class="seclabel">Proyectos</div>
+
+  <a class="feature still" href="proyecto/radio-betania.html">
+    <img src="assets/radio-betania/001.jpg" alt="">
+    <span class="t">Radio Betania</span>
+    <span class="m mono">Largometraje documental &middot; En desarrollo &middot; Amazon&iacute;a peruana &middot; Coproducci&oacute;n M&eacute;xico &ndash; Espa&ntilde;a &middot; Dirigido por: V&iacute;ctor Rakosnik y Tom&aacute;s Fern&aacute;ndez V&eacute;rtiz</span>
+  </a>
+
+  <a class="feature live" href="proyecto/bajo-el-mismo-sol.html" data-clips="assets/reel/reel1.mp4,assets/reel/reel2.mp4,assets/reel/reel3.mp4,assets/reel/reel4.mp4,assets/reel/reel5.mp4,assets/reel/reel6.mp4">
+    <video muted loop playsinline preload="metadata" disablepictureinpicture></video>
+    <span class="t">Bajo el Mismo Sol</span>
+    <span class="m mono">Documental &middot; En postproducci&oacute;n &middot; Galicia, Espa&ntilde;a &middot; Dirigido por: Tom&aacute;s Fern&aacute;ndez V&eacute;rtiz</span>
+  </a>
+
+  <a class="feature live" href="proyecto/dos-noches-y-tres-dias.html" data-clips="assets/reel/reel_2y3a.mp4,assets/reel/reel_2y3b.mp4">
+    <video muted loop playsinline preload="metadata" disablepictureinpicture></video>
+    <span class="t">Dos Noches y Tres D&iacute;as (ZURDO)</span>
+    <span class="m mono">2021 &middot; 20 min &middot; Documental de dos canales &middot; Dirigido por: Yago Onta&ntilde;&oacute;n de Prado y Tom&aacute;s Fern&aacute;ndez V&eacute;rtiz</span>
+  </a>
+
+  <a class="feature live" href="proyecto/el-sentir-de-las-montanas.html" data-clips="assets/reel/reel7_sentir.mp4,assets/reel/reel8_sentir.mp4,assets/reel/reel9_sentir.mp4">
+    <video muted loop playsinline preload="metadata" disablepictureinpicture></video>
+    <span class="t">El Sentir de las Monta&ntilde;as</span>
+    <span class="m mono">2022 &middot; 53 min &middot; Documental &middot; Londres &middot; Dirigido por: Tom&aacute;s Fern&aacute;ndez V&eacute;rtiz</span>
+  </a>
+</div>
+<script>
+(function(){
+  var feats=document.querySelectorAll('.feature[data-clips]');
+  for(var i=0;i<feats.length;i++)(function(f){
+    var clips=f.getAttribute('data-clips').split(','),
+        v=f.querySelector('video');
+    v.src=clips[Math.floor(Math.random()*clips.length)];
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){});}
+        else v.pause();
+      });
+    },{threshold:.15});
+    io.observe(f);
+  })(feats[i]);
+})();
+</script>
+<footer>
+  <span>&copy; Nuevo Norte &mdash; Casa productora de cine</span>
+  <span class="mono">CDMX</span>
+</footer>
+</body>
+</html>

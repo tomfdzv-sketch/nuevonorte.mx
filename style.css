@@ -262,3 +262,17 @@ body.reel-on .prose,body.reel-on .contact{background:rgba(20,18,16,.55);
 body.reel-on .seclabel{border-color:var(--linec)}
 .gatespace{height:46vh}
 @media(max-width:639px){.gatespace{height:20vh}}
+/* proyectos como portadas (estilo film.html) */
+.band .feature{border-bottom:1px solid var(--line)}
+.band .feature video{opacity:.85}
+.band .feature:hover video{opacity:1}
+.band .feature .t{color:#e8ddc8}
+.band .feature .m{max-width:85%}
+.feature.txt{aspect-ratio:auto;min-height:180px;display:flex;flex-direction:column;
+  justify-content:flex-end;padding:0 0 0 0}
+.feature.txt .t{position:static;margin:0 0 8px 26px;padding-top:44px}
+.feature.txt .m{position:static;margin:0 0 18px 26px}
+.feature.txt:hover .t{letter-spacing:.05em}
+@media(max-width:560px){.band .feature .m{position:absolute;bottom:14px}}
+.feature.still img{opacity:.8;transform:none}
+.feature.still:hover img{opacity:1}

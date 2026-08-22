@@ -25,7 +25,7 @@
   <nav>
     <a href="index.html#casa">La Casa</a>
     <a href="index.html#mision">Misi&oacute;n</a>
-    <a href="index.html#proyectos">Proyectos</a>
+    <a href="proyectos.html">Proyectos</a>
     <a href="index.html#contacto">Contacto</a>
   </nav>
 </header>
@@ -48,18 +48,15 @@
   if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
   for(var i=VC.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=VC[i];VC[i]=VC[j];VC[j]=t;}
   var wrap=document.getElementById('reel'),cap=document.getElementById('reelcap'),
-      v=wrap.querySelector('video'),n=0,started=false;
+      v=wrap.querySelector('video'),n=0;
+  document.documentElement.classList.add('reel-on');
+  document.body.classList.add('reel-on');
   function play(){
     var it=VC[n%VC.length];n++;
     v.src=it.s;v.load();cap.textContent='\u25b8 '+it.c;
     var p=v.play();if(p&&p.catch)p.catch(function(){});
   }
-  v.addEventListener('playing',function(){
-    wrap.classList.add('play');
-    if(!started){started=true;
-      document.documentElement.classList.add('reel-on');
-      document.body.classList.add('reel-on');}
-  });
+  v.addEventListener('playing',function(){wrap.classList.add('play');});
   v.addEventListener('ended',play);
   v.addEventListener('error',function(){play();});
   play();
@@ -98,41 +95,6 @@
   proyectos y las personas quieren volver.</p>
 </div>
 
-<div class="band" id="proyectos">
-  <div class="seclabel">Proyectos</div>
-
-  <a class="proj" href="proyecto/radio-betania.html">
-    <h2 class="t">Radio Betania</h2>
-    <div class="m mono"><span>Largometraje &middot; Documental</span><span>En desarrollo</span><span>M&eacute;xico &ndash; Espa&ntilde;a</span></div>
-    <p class="n">El primer largometraje de la casa, en coproducci&oacute;n
-    internacional M&eacute;xico&ndash;Espa&ntilde;a. Actualmente en desarrollo y ruta de
-    financiamiento, con rodaje previsto para 2027.</p>
-  </a>
-
-  <a class="proj" href="proyecto/bajo-el-mismo-sol.html">
-    <h2 class="t">Bajo el Mismo Sol</h2>
-    <div class="m mono"><span>Documental</span><span>En postproducci&oacute;n</span><span>Galicia, Espa&ntilde;a</span></div>
-    <p class="n">Documental observacional rodado en Galicia a lo largo de cinco
-    viajes. Un solo d&iacute;a imaginado &mdash; amanecer a noche &mdash; construido con las vidas
-    de personas que no se conocen entre s&iacute;: canteros, tamborileiros,
-    apicultores, el entroido.</p>
-  </a>
-
-  <a class="proj" href="proyecto/dos-noches-y-tres-dias.html">
-    <h2 class="t">Dos Noches y Tres D&iacute;as</h2>
-    <div class="m mono"><span>2021 &middot; 20 min</span><span>Documental de dos canales</span><span>Codirigida con Yago Onta&ntilde;&oacute;n de Prado</span></div>
-    <p class="n">Documental de dos canales codirigido con Yago Onta&ntilde;&oacute;n de
-    Prado. Presentado en APT Gallery y Fitzrovia Gallery, Londres.</p>
-  </a>
-
-  <a class="proj" href="proyecto/el-sentir-de-las-montanas.html">
-    <h2 class="t">El Sentir de las Monta&ntilde;as</h2>
-    <div class="m mono"><span>2022 &middot; 53 min</span><span>Documental</span><span>Londres</span></div>
-    <p class="n">Documental en tres cap&iacute;tulos realizado con miembros de la
-    comunidad latinoamericana en Londres: una exploraci&oacute;n de la llegada, la
-    comunidad y la sanaci&oacute;n.</p>
-  </a>
-</div>
 
 <div class="seclabel" id="contacto">Contacto</div>
 <div class="contact">
