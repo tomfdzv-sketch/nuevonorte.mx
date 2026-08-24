@@ -277,3 +277,6 @@ body.reel-on .seclabel{border-color:var(--linec)}
 .feature.still img{opacity:.8;transform:none}
 .feature.still:hover img{opacity:1}
 .nflip{display:inline-block;transform:scaleX(-1)}
+.prose h3{font-family:"Oswald","Arial Narrow",sans-serif;font-weight:600;
+  text-transform:uppercase;letter-spacing:.05em;font-size:22px;margin:34px 0 10px}
+.prose h3:first-child{margin-top:0}
