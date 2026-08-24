@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nuevo Norte — Film Production Company</title>
+<meta name="description" content="Film production company in Mexico City. Fiction and documentary; production services, line production and co-production.">
+<link rel="canonical" href="https://nuevonorte.mx/en/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nuevo Norte">
+<meta property="og:title" content="Nuevo Norte — Casa productora de cine">
+<meta property="og:description" content="Film production company in Mexico City. Fiction and documentary; production services, line production and co-production.">
+<meta property="og:url" content="https://nuevonorte.mx/en/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#141210">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Archivo:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1 class="giant"><a href="index.html"><span>Nuevo</span><span>Norte</span></a></h1>
+    <p class="sub">Film production company &middot; Mexico City</p>
+  </div>
+  <nav>
+    <a href="index.html#casa">About</a>
+    <a href="proyectos.html">Projects</a>
+    <a href="index.html#contacto">Contact</a>
+    <span class="navlang mono"><a href="../index.html">ES</a><i>/</i><a class="on">EN</a></span>
+  </nav>
+</header>
+<div id="reel" aria-hidden="true"><video muted playsinline preload="auto" disablepictureinpicture></video><div class="veil"></div></div><div id="reelcap" class="mono"></div>
+<script>
+(function(){
+  var VC=[
+   {s:"../assets/reel/reel1.mp4",c:"Bajo el Mismo Sol"},
+   {s:"../assets/reel/reel2.mp4",c:"Bajo el Mismo Sol"},
+   {s:"../assets/reel/reel3.mp4",c:"Bajo el Mismo Sol"},
+   {s:"../assets/reel/reel4.mp4",c:"Bajo el Mismo Sol"},
+   {s:"../assets/reel/reel5.mp4",c:"Bajo el Mismo Sol"},
+   {s:"../assets/reel/reel6.mp4",c:"Bajo el Mismo Sol"},
+   {s:"../assets/reel/reel7_sentir.mp4",c:"El Sentir de las Monta\u00f1as"},
+   {s:"../assets/reel/reel8_sentir.mp4",c:"El Sentir de las Monta\u00f1as"},
+   {s:"../assets/reel/reel9_sentir.mp4",c:"El Sentir de las Monta\u00f1as"},
+   {s:"../assets/reel/reel_2y3a.mp4",c:"Dos Noches y Tres D\u00edas"},
+   {s:"../assets/reel/reel_2y3b.mp4",c:"Dos Noches y Tres D\u00edas"}];
+  if(!matchMedia('(min-width:640px)').matches)return;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  for(var i=VC.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=VC[i];VC[i]=VC[j];VC[j]=t;}
+  var wrap=document.getElementById('reel'),cap=document.getElementById('reelcap'),
+      v=wrap.querySelector('video'),n=0;
+  document.documentElement.classList.add('reel-on');
+  document.body.classList.add('reel-on');
+  function play(){
+    var it=VC[n%VC.length];n++;
+    v.src=it.s;v.load();cap.textContent='\u25b8 '+it.c;
+    var p=v.play();if(p&&p.catch)p.catch(function(){});
+  }
+  v.addEventListener('playing',function(){wrap.classList.add('play');});
+  v.addEventListener('ended',play);
+  v.addEventListener('error',function(){play();});
+  play();
+})();
+</script>
+
+<div class="gatespace"></div>
+
+<div class="seclabel" id="casa">Nuevo Norte</div>
+<div class="prose">
+  <p class="lead">An audiovisual production company.</p>
+  <p>Based in Mexico City with an international outlook, we develop and produce
+  fiction, documentary and audiovisual projects for third parties, both in
+  Mexico and abroad.</p>
+  <p>We look for stories with an identity of their own and work to turn them
+  into solid projects, capable of finding their audience and sustaining
+  themselves economically. We believe creative ambition and viability are not
+  opposing forces: a good production must protect both.</p>
+  <p>Our team brings together experience in directing, production, executive
+  production and post-production, which allows us to accompany a project from
+  development through final delivery.</p>
+</div>
+
+<div class="seclabel" id="hacemos">What we do</div>
+<div class="prose">
+  <h3>In-house production</h3>
+  <p>We develop and produce feature films, documentaries and other audiovisual
+  formats from their earliest stages.</p>
+  <p>We are drawn to projects with a clear point of view and a reason to exist,
+  regardless of genre or scale. We work from creative and financial
+  development to build films with identity, but also with a realistic strategy
+  for production, financing, distribution and audience.</p>
+  <h3>Co-production</h3>
+  <p>We take part in national and international co-productions, contributing
+  development, executive production, financial structure and production
+  capacity.</p>
+  <p>We aim to build long-term alliances with producers, filmmakers, funds and
+  partners that allow each project to reach its best creative and commercial
+  version.</p>
+  <h3>Production Services &amp; Line Production</h3>
+  <p>We produce for national and international companies, studios and teams
+  that need a local or executive partner to carry out a production.</p>
+  <p>We work in Mexico and other territories, coordinating crews, budgets,
+  locations, logistics, shoots and post-production according to the needs of
+  each project.</p>
+  <h3>Commercial production</h3>
+  <p>We work selectively with brands, agencies and collaborators on
+  advertising, branded content and other audiovisual formats.</p>
+  <p>We apply the same standard as in our own productions: production rigor,
+  visual care and attention to detail.</p>
+</div>
+
+<div class="seclabel" id="vision">Our vision</div>
+<div class="prose">
+  <p>We are interested in film and audiovisual work that has something to say
+  and its own way of saying it.</p>
+  <p>We don&rsquo;t believe a film has to choose between identity and viability. Our
+  job as producers is precisely to find the balance between creative vision,
+  available resources, the market and the audience.</p>
+  <p>Every project demands a different strategy. Some need time; others, speed.
+  Some are born for festivals; others seek a wide audience. Producing means
+  understanding what each one needs and building around it.</p>
+  <p>We want Nuevo Norte to be a structure capable of developing its own
+  projects, producing for others and building lasting relationships in and
+  beyond Mexico.</p>
+</div>
+
+<div class="seclabel" id="contacto">Contact</div>
+<div class="contact">
+  <p>For co-productions, production services and line production in Mexico, or
+  projects in need of a production company:</p>
+  <p class="mono"><a href="mailto:hola@nuevonorte.mx">hola@nuevonorte.mx</a> &middot; Ciudad de M&eacute;xico</p>
+</div>
+<footer>
+  <span>&copy; Nuevo Norte &mdash; Film production company</span>
+  <span class="mono">CDMX</span>
+</footer>
+</body>
+</html>
